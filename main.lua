@@ -116,7 +116,6 @@ end
 function love.draw()
     love.graphics.print("FPS: " .. fps,20,20)
     love.graphics.print("Score: " .. Objects.score,20,60)
-    love.graphics.print("Accuracy: " .. (((Objects.score+100*Objects.misses)/1000)-Objects.misses*5)/((Objects.score+100*Objects.misses)/1000), 20, 90)
 
     -- Rendering
     for oi,ov in ipairs(Objects.apples) do
